@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+:root {
+    --main-bg-color: #06212F;
+    --accent-color: #2F80ED;
+    --menu-selection-color: #082A3D;
+    --content-white: #F8F9FA;
+}
+::selection {
+    background-color: var(--menu-selection-color);
+    color: var(--content-white);
+}
+body {
+    overflow-x: hidden;
+}
+.set-background {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
