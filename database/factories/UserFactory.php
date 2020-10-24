@@ -22,8 +22,15 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+        $gender = random_int(0, 1) === 0 ? 'male' : 'female';
         return [
-            'name' => $this->faker->name,
+            'first_name' => $this->faker->firstName($gender),
+            'last_name' => $this->faker->lastName,
+            'citizenship' => $this->faker->country,
+            'phone' => $this->faker->phoneNumber,
+            'gender' => $gender,
+            'username' => $this->faker->userName,
+            'birthday_at' => $this->faker->dateTimeInInterval('-25 years', '+ 7 years', 'UTC'),
             'email' => $this->faker->unique()->safeEmail,
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password

@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: .1s all;
+}
+a {
+    color: inherit !important;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+body {
+    background-color: var(--main-bg-color);
+    font-family: "Montserrat", sans-serif;
+}
+.aside-menu {
+    color: #fff;
+}
+.aside-menu::first-letter {
+    text-transform: uppercase;
+}
+div#app {
+    padding: 32px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    padding-left: 0;
+}
+
+aside.aside-menu {
+    width: 15vw;
+}
+
+div#content {
+    width: 90vw;
+    background: #F8F9FA;
+    border-radius: 32px;
+}
+
+.menu-tabs .tab {
+    padding: 16px 32px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 12px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    opacity: .5;
+}
+.menu-tabs .tab:hover {
+    background-color: var(--menu-selection-color);
+    border-left: 6px solid #fff;
+    opacity: 1;
+}
+.menu-tabs .tab:hover .svg-icon {
+    fill: #fff;
+}
+.tab .tab-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+}
+.logo {
+    background-image: url("../assets/unilogo.png");
+    width: 100%;
+    height: 64px;
+}
+.logo-subtext {
+    text-align: center;
+    opacity: .5;
+}
