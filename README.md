@@ -9,7 +9,7 @@
 - Node.js
 - PHP
 - Laravel
-- Docker-compos
+- Docker-compose
 - PostgreSQL
 - Nginx
 - Laravel UI
