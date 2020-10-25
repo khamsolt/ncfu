@@ -17,8 +17,8 @@
 
 ## Запуск проекта
 
-1. Клонируйте репозиторий настроенного для запука под Windows проекта laradock. <a href="https://github.com/khalmost/laradock">khalmost/laradock</a>
-    - `git clone https://github.com/khalmost/laradock`
+1. Клонируйте репозиторий настроенного для запука под Windows проекта laradock. <a href="https://github.com/khamsolt/laradock">khamsolt/laradock</a>
+    - `git clone https://github.com/khamsolt/laradock`
 2. Перейдите в репозиторий клоинрованного laradock и соберите docker
     - `docker-compose build nginx php-fpm postgres workspace`
 3. После сборки docker, поднимите его
@@ -26,7 +26,7 @@
     4. Убедитесь в успешном поднятии проекта 
         `docker-compose ps`
         5.  В сдучае ошибок можно ввести `docker-compose up -d postgres`
-4. Клонируйте (желательно рядом с laradock) проект сайта СКФУ из репозитория <a href="http://github.com/khalmost/ncfu">khalmost/ncfu</a>
+4. Клонируйте (желательно рядом с laradock) проект сайта СКФУ из репозитория <a href="http://github.com/khamsolt/ncfu">khalmost/ncfu</a>
     - `git clone git clone https://github.com/khamsolt/ncfu.git`
 5. Создайте базу данных и пользователя PostgreSQL внутри laradock
     - `docker-compose exec postgres psql -U default`
